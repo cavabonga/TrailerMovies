@@ -1,0 +1,35 @@
+section.sliding
+  hr
+  .container-fluid.first
+    .row
+      .col-md-12.col-xs-12.first
+        .carousel.slide(data-ride="carousel" id="myCarousel")
+          ol.carousel-indicators
+            li(data-target="#myCarousel" data-slide-to="0" class="active")
+            li(data-target="#myCarousel" data-slide-to="1")
+            li(data-target="#myCarousel" data-slide-to="2")
+            li(data-target="#myCarousel" data-slide-to="3")
+            
+          .carousel-inner(role="listbox")
+            .item.active
+              img(src="http://watertower-music.com/images/news/King-Arthur_Sdtk_Banner_website_1170x500px_01.png" class="img-responsive" alt="king" id="arthur")
+            
+            .item
+              img(src="http://cdn1.themovienetwork.com/sites/themovienetwork.com/files/megatron-transformers-the-last-knight-banner.jpg" class="img-responsive" alt="trans" id="transformers")
+              
+            .item
+              img(src="http://empirecinema.com.mt/wp-content/uploads/2017/05/Rough-Night-.jpg" class="img-responsive" alt="rough" id="rough")
+              
+            .item
+              img(src="http://cdn.empireonline.com/jpg/80/0/0/1200/675/0/0/0/0/0/0/0/c/articles/589c7cca4c6dd8c70602b37d/UNLOCKEDcrop1.jpg" class="img-responsive" alt="unlocked" id="unlocked")
+              
+          a(class="left carousel-control" href="#myCarousel" role="button" data-slide="prev")
+            span(class="glyphicon glyphicon-chevron-left" aria-hidden="true")
+            span(class="sr-only") Previous
+          a(class="right carousel-control" href="#myCarousel" role="button" data-slide="next")
+            span(class="glyphicon glyphicon-chevron-right" aria-hidden="true")
+            span(class="sr-only") Next
+      
+          
+        
+          

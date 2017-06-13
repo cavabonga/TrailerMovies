@@ -1,0 +1,66 @@
+section.sci-fi
+  h2
+    color: burlywood
+    text-align: center
+    margin-top: 50px
+
+  h2::first-letter
+    color: #53346d
+
+  .tab-panels
+    margin-top: 30px
+    ul
+      margin: 0
+      padding: 0
+      li
+        list-style-type: none
+        display: inline-block
+        background: #53346d
+        color: burlywood
+        padding: 10px 59px
+        cursor: pointer
+
+      li:first-child
+        border-radius: 10px 0px 0px 10px
+      li:last-child
+        border-radius: 0px 10px 10px 0px
+
+      .active
+        color: #53346d
+        background: burlywood
+        font-weight: 700
+
+    .panel
+      display: none
+      paddding: 30px
+      //background: #53346d
+      border-radius: 10px 10px 0px 0px
+
+    .panel.active
+      display: block
+
+    iframe
+      width: 100%
+      margin-top: 5px
+      border: 3px solid #53346d
+
+  @media (max-width: 1024px)
+    .tab-panels
+      ul
+        li
+          padding: 10px 34px
+
+  @media (max-width: 768px)
+    .tab-panels
+      ul
+        li
+          display: block
+          text-align: center
+
+        li:first-child,
+        li:nth-child(2),
+        li:nth-child(3),
+        li:nth-child(4)
+          padding-top: 20px
+          padding-bottom: 20px
+          border-radius: 0px

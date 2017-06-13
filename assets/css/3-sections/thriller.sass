@@ -1,0 +1,57 @@
+section.thriller
+  h2
+    color: burlywood
+    text-align: center
+    margin-top: 70px
+
+  h2::first-letter
+    color: #53346d
+
+  .panelki
+    margin-top: 30px
+    ul
+      margin: 0
+      padding: 0
+      li
+        list-style-type: none
+        display: inline-block
+        background: #53346d
+        color: burlywood
+        padding: 10px 108px
+        cursor: pointer
+
+      li:first-child
+        border-radius: 10px 0px 0px 10px
+      li:last-child
+        border-radius: 0px 10px 10px 0px
+
+      .active
+        color: #53346d
+        background: burlywood
+        font-weight: 700
+
+    .panel-thrill
+      display: none
+      paddding: 30px
+      //background: #53346d
+      border-radius: 10px 10px 0px 0px
+
+    .panel-thrill.active
+      display: block
+
+    iframe
+      width: 100%
+      margin-top: 5px
+      border: 3px solid #53346d
+
+  @media (max-width: 1024px)
+    .panelki
+      ul
+        li
+          display: block
+          text-align: center
+          padding: 20px
+
+        li:first-child,
+        li:last-child
+          border-radius: 0px
